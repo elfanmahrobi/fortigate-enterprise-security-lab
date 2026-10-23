@@ -1,4 +1,31 @@
 # Project Documentation
 
-This directory contains the implementation plan, firewall policy matrix,
-security hardening checklist, and validation test plan.
+This directory contains the technical documentation for the FortiGate
+Enterprise Security Lab.
+
+## Available Documents
+
+### Firewall Policy Matrix
+
+Defines the proposed communication requirements between corporate users,
+internal servers, guest devices, management systems, security-monitoring
+systems, the DMZ, and the internet.
+
+firewall-policy-matrix.md
+
+## Planned Documents
+
+- Implementation plan
+- Security hardening checklist
+- Validation test plan
+- Rollback plan
+- High-availability test procedure
+- Troubleshooting guide
+
+## Disclaimer
+
+All organizations, systems, IP addresses, domain names, and configurations
+in this directory are fictional or sanitized.
+
+No production information, credentials, customer data, or confidential
+configuration is included.
