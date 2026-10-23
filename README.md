@@ -99,28 +99,31 @@ between different security zones.
 
 ## Logical Architecture
 
-The following diagram illustrates the high-level architecture of the
-fictional enterprise environment used in this lab.
+The following diagram illustrates the enterprise network architecture used
+in this fictional FortiGate security lab.
 
-![FortiGate Enterprise Network Architecture](diagrams/fortigate-enterprise-network-architecture.png)
+[![FortiGate Enterprise Network Architecture](diagrams/fortigate-enterprise-network-architecture.png)](diagrams/fortigate-enterprise-network-architecture.png)
+
+> Click the diagram to view the full-size architecture.
 
 The architecture includes:
 
-- Dual ISP connectivity
-- FortiGate Active-Passive HA cluster
-- Dedicated HA synchronization network
-- Core switching infrastructure
-- Corporate user segmentation
-- Internal server segmentation
+- Dual ISP connectivity with SD-WAN and failover
+- FortiGate Active-Passive High Availability
+- Dedicated HA synchronization links
+- VLAN and security-zone segmentation
+- Corporate user network
+- Internal application, database, DNS, and NTP services
 - Guest internet-only network
-- Isolated DMZ for public services
+- DMZ for public-facing HTTPS services
 - Restricted management network
-- Dedicated security monitoring network
+- Centralized logging and monitoring network
+- Least-privilege inter-zone communication
 
-> **Disclaimer:** This diagram represents a fictional lab environment created
-> for educational and portfolio purposes. All names, systems, IP addresses,
-> and network information are dummy data and do not represent any real
-> organization.
+> **Disclaimer:** This diagram represents a fictional laboratory environment
+> created for educational and portfolio purposes. All organizations, domain
+> names, systems, IP addresses, and configurations shown are dummy data and
+> do not represent any real organization.
 
 ## Skills Demonstrated
 
