@@ -86,3 +86,11 @@ Services              : DNS, HTTP, HTTPS
 Action                : Allow
 Source NAT            : Enabled
 Logging               : All sessions
+
+Security Profiles
+Antivirus
+Intrusion Prevention System
+Web filtering
+DNS filtering
+Application control
+SSL certificate inspection
