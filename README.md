@@ -121,3 +121,101 @@ The architecture includes:
 > for educational and portfolio purposes. All names, systems, IP addresses,
 > and network information are dummy data and do not represent any real
 > organization.
+
+## Skills Demonstrated
+
+This lab demonstrates practical skills in enterprise firewall implementation,
+network security architecture, security policy design, and technical
+documentation.
+
+### FortiGate Administration
+
+- FortiGate Next-Generation Firewall administration
+- FortiOS CLI configuration
+- Interface and VLAN configuration
+- Firewall address and service objects
+- IPv4 firewall policy management
+- Configuration backup and validation
+- FortiGate troubleshooting commands
+
+### Network Security Architecture
+
+- Enterprise network security design
+- VLAN-based network segmentation
+- Security-zone architecture
+- Corporate user network protection
+- Internal server network isolation
+- Guest-network isolation
+- Dedicated management network
+- DMZ architecture for public-facing services
+- Security-monitoring network design
+
+### Firewall Policy and Access Control
+
+- Least-privilege firewall policy design
+- Default-deny security model
+- Inter-zone access control
+- Policy ordering and rule optimization
+- Source and destination restriction
+- Service-based access control
+- Administrative access restriction
+- Denied-traffic logging
+
+### NAT and Application Publishing
+
+- Source Network Address Translation
+- Destination Network Address Translation
+- FortiGate Virtual IP configuration
+- HTTPS application publishing
+- Public-to-DMZ traffic control
+- Secure inbound firewall policy design
+
+### Threat Prevention
+
+- Antivirus inspection
+- Intrusion Prevention System
+- Web filtering
+- DNS filtering
+- Application control
+- SSL certificate inspection
+- Malicious-traffic detection
+- Security-profile implementation
+
+### High Availability and Connectivity
+
+- FortiGate Active-Passive High Availability
+- HA heartbeat and synchronization
+- Session synchronization
+- Interface monitoring
+- Dual ISP connectivity
+- Internet-link failover planning
+- Firewall failover validation
+
+### Security Operations
+
+- Centralized traffic logging
+- Security-event monitoring
+- Administrative-activity logging
+- Configuration-change monitoring
+- Incident troubleshooting
+- Packet capture and debug flow
+- Firewall-policy validation
+- Security test-case development
+
+### Security Engineering
+
+- Defense-in-depth architecture
+- Network attack-surface reduction
+- Management-plane hardening
+- Technical risk identification
+- Configuration sanitization
+- Security documentation
+- Implementation planning
+- Post-implementation validation
+
+### Technologies and Concepts
+
+`FortiGate` `FortiOS` `NGFW` `Firewall Policy` `VLAN` `Security Zones`
+`Network Segmentation` `High Availability` `Dual WAN` `NAT` `DNAT`
+`Virtual IP` `DMZ` `IPS` `Antivirus` `Web Filtering` `DNS Filtering`
+`Application Control` `SSL Inspection` `Syslog` `Network Troubleshooting`
