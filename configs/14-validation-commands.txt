@@ -1,0 +1,40 @@
+# Run after each implementation stage.
+get system status
+show system interface
+get system interface physical
+show firewall address
+show firewall addrgrp
+show firewall service custom
+show firewall service group
+show antivirus profile
+show ips sensor
+show webfilter profile
+show dnsfilter profile
+show application list
+show system sdwan
+get router info routing-table all
+show firewall vip
+show firewall policy
+show firewall local-in-policy
+show log syslogd setting
+get system ha status
+
+diagnose sys sdwan health-check
+diagnose sys sdwan service
+diagnose firewall iprope show 100004
+diagnose sys session filter clear
+
+diagnose sniffer packet any 'host 10.10.50.10 and port 443' 4 0 l
+
+# Example flow debug. Replace addresses as required.
+diagnose debug reset
+diagnose debug flow filter clear
+diagnose debug flow filter saddr 10.10.10.10
+diagnose debug flow filter daddr 10.10.20.20
+diagnose debug flow show function-name enable
+diagnose debug flow trace start 100
+diagnose debug enable
+
+# Always stop debugging.
+diagnose debug disable
+diagnose debug reset
