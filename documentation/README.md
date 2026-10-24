@@ -22,6 +22,14 @@ firewall-policy-matrix.md
 - High-availability test procedure
 - Troubleshooting guide
 
+### Implementation Plan
+
+Defines the phased implementation process for system settings, interfaces,
+VLANs, security objects, SD-WAN, routing, application publishing, firewall
+policies, management access, logging, and FortiGate High Availability.
+
+[View Implementation Plan](implementation-plan.md)
+
 ## Disclaimer
 
 All organizations, systems, IP addresses, domain names, and configurations
