@@ -1,7 +1,8 @@
 # Project Documentation
 
-This directory contains the design, implementation, hardening, and validation
-documentation for the FortiGate Enterprise Security Lab.
+This directory contains the design, implementation, hardening, risk,
+validation, failover, rollback, and troubleshooting documentation for the
+FortiGate Enterprise Security Lab.
 
 The documentation represents a fictional enterprise environment created for
 educational and portfolio purposes.
@@ -35,7 +36,8 @@ The document includes:
 
 Defines the phased implementation process for system settings, interfaces,
 VLANs, security objects, SD-WAN, routing, application publishing, firewall
-policies, management access, logging, and FortiGate High Availability.
+policies, management access, centralized logging, and FortiGate High
+Availability.
 
 The plan includes:
 
@@ -77,8 +79,8 @@ The checklist includes:
 
 ### Validation Test Plan
 
-Defines functional, negative, security, and failover test cases for the
-FortiGate Enterprise Security Lab.
+Defines functional, negative, security, connectivity, and failover test cases
+for the FortiGate Enterprise Security Lab.
 
 The test plan covers:
 
@@ -104,26 +106,148 @@ The test plan covers:
 Identifies and evaluates security and operational risks associated with
 firewall policies, network segmentation, administrative access, the DMZ,
 High Availability, SD-WAN, security profiles, centralized logging, firmware
-management, configuration backup, and public repository sanitization.
+management, configuration backups, and public repository sanitization.
+
+The risk register includes:
+
+- Qualitative risk-assessment methodology
+- Likelihood and impact ratings
+- Inherent and residual risk
+- Existing security controls
+- Additional mitigation actions
+- Risk ownership
+- Open risk-treatment actions
+- Risk-review triggers
 
 [View Security Risk Register](risk-register.md)
 
 ---
 
-## Planned Documentation
+### High-Availability Failover Procedure
 
-The following documents will be added during the next project phase:
+Defines controlled failover testing for the FortiGate Active-Passive High
+Availability cluster.
 
-- Validation test results
-- Security risk register
-- High-availability failover procedure
-- SD-WAN failover procedure
-- Rollback plan
-- Troubleshooting guide
-- Implementation evidence index
+The procedure includes:
 
-Documents that depend on test execution will remain marked as pending until
-the relevant tests are completed in a controlled laboratory environment.
+- Pre-test cluster validation
+- Controlled primary-member failover
+- Monitored-interface failure
+- Single heartbeat-link failure
+- Configuration synchronization testing
+- Failure and rollback criteria
+- Post-failover validation
+- Evidence requirements
+
+[View HA Failover Procedure](ha-failover-procedure.md)
+
+---
+
+### SD-WAN Failover Procedure
+
+Defines failover and recovery testing for the primary and secondary internet
+service provider connections.
+
+The procedure includes:
+
+- Physical WAN1 failure
+- Upstream-path failure while the interface remains active
+- Performance SLA validation
+- Single SLA-target failure
+- Complete WAN failure
+- Failback validation
+- Routing and session verification
+- Rollback procedures
+
+[View SD-WAN Failover Procedure](sdwan-failover-procedure.md)
+
+---
+
+### Configuration Rollback Plan
+
+Defines controlled rollback procedures for configuration changes that cause
+unexpected service or security impact.
+
+The rollback plan covers:
+
+- Firewall-policy rollback
+- Address and service object rollback
+- Security-profile rollback
+- SD-WAN and routing rollback
+- Virtual IP rollback
+- Management-access recovery
+- High-Availability recovery
+- Full configuration restoration
+- Post-rollback validation
+
+[View Configuration Rollback Plan](rollback-plan.md)
+
+---
+
+### Troubleshooting Guide
+
+Provides a structured troubleshooting workflow for the FortiGate Enterprise
+Security Lab.
+
+The guide covers:
+
+- System health checks
+- Interfaces and VLANs
+- Routing and SD-WAN
+- Firewall-policy matching
+- Session inspection
+- Debug flow
+- Packet capture
+- NAT and Virtual IP
+- DNS and NTP
+- Security profiles
+- Centralized logging
+- High Availability
+- Troubleshooting evidence collection
+
+[View Troubleshooting Guide](troubleshooting-guide.md)
+
+---
+
+### Validation Test Results
+
+Records the actual results of the test cases defined in the Validation Test
+Plan.
+
+The results document records:
+
+- Test identifier
+- Test scenario
+- Expected result
+- Actual result
+- Matched firewall policy
+- Logging result
+- Test status
+- Supporting evidence
+
+Tests remain marked as `NOT TESTED` until they are executed in a controlled
+laboratory environment.
+
+[View Validation Test Results](test-results.md)
+
+---
+
+### Implementation Evidence Index
+
+Maps security controls and validation test cases to sanitized implementation
+evidence stored in the `screenshots` directory.
+
+The evidence index includes:
+
+- Evidence identifiers
+- Related security controls
+- Related test cases
+- Planned filenames
+- Evidence status
+- Review requirements
+- Screenshot sanitization checklist
+
+[View Implementation Evidence Index](implementation-evidence-index.md)
 
 ---
 
@@ -135,35 +259,103 @@ the relevant tests are completed in a controlled laboratory environment.
 | Implementation Plan | Complete |
 | Security Hardening Checklist | Complete |
 | Validation Test Plan | Complete |
-| Validation Test Results | Pending Lab Execution |
 | Security Risk Register | Complete |
-| HA Failover Procedure | Planned |
-| SD-WAN Failover Procedure | Planned |
-| Rollback Plan | Planned |
-| Troubleshooting Guide | Planned |
-| Implementation Evidence Index | Pending Lab Execution |
+| HA Failover Procedure | Complete |
+| SD-WAN Failover Procedure | Complete |
+| Configuration Rollback Plan | Complete |
+| Troubleshooting Guide | Complete |
+| Validation Test Results | Pending Lab Execution |
+| Implementation Evidence Index | Complete |
+| Sanitized Implementation Evidence | Pending Lab Execution |
+
+> Documents marked as `Complete` have been prepared and reviewed as design or
+> procedural documentation. This status does not mean that all documented
+> controls have been executed or technically validated.
+
+---
+
+## Project Validation Status
+
+| Validation Area | Status |
+|---|---|
+| Architecture Review | Complete |
+| Network Addressing Review | Complete |
+| Firewall Policy Design Review | Complete |
+| Configuration Sanitization Review | Complete |
+| FortiOS CLI Compatibility Testing | Pending Lab Execution |
+| Firewall Policy Testing | Pending Lab Execution |
+| Security Profile Testing | Pending Lab Execution |
+| SD-WAN Failover Testing | Pending Lab Execution |
+| High-Availability Failover Testing | Pending Lab Execution |
+| Centralized Logging Validation | Pending Lab Execution |
+| Implementation Evidence Review | Pending Lab Execution |
 
 ---
 
 ## Related Project Resources
 
-- Main entation Principles
-
-The project documentation follows these principles:
-
-- Least-privilege access
-- Default-deny security
-- Defense in depth
-- Network segmentation
-- Management-plane isolation
+- [Main Project README](../README.md)
+- [Sanitized FortiGate Configurations](../configs/README.md)
+- [Architecturene isolation
 - Controlled implementation
 - Documented validation
 - Configuration sanitization
 - Evidence-based testing
+- Risk-based security engineering
 - Clear separation between designed and tested controls
 
 A control is not marked as successfully tested until it has been executed and
-validated in a controlled lab environment.
+validated in a controlled laboratory environment.
+
+All test results must include:
+
+- Execution date
+- Responsible tester
+- Expected result
+- Actual result
+- Final status
+- Sanitized supporting evidence
+
+---
+
+## Documentation Maintenance
+
+The documentation should be reviewed when:
+
+- A firewall policy is added or modified
+- A new VLAN or security zone is introduced
+- An internet-facing application is published
+- The FortiOS version changes
+- Security profiles are updated
+- The SD-WAN design changes
+- High-Availability settings change
+- The logging architecture changes
+- A validation test identifies unexpected behavior
+- A new project release is created
+
+Document changes should use clear commit messages and must not introduce
+credentials, production information, or confidential identifiers.
+
+---
+
+## Current Project Phase
+
+The project design and documentation phases are complete.
+
+The following activities depend on controlled lab execution:
+
+1. Import and validate the sanitized FortiOS configurations
+2. Verify interface and VLAN connectivity
+3. Validate firewall-policy matching
+4. Validate source NAT and destination NAT
+5. Test security-profile enforcement
+6. Test SD-WAN failover and recovery
+7. Test FortiGate High Availability
+8. Validate centralized logging
+9. Record actual test results
+10. Upload sanitized evidence
+11. Complete the final project review
+12. Publish the first project release
 
 ---
 
@@ -175,5 +367,8 @@ configurations in this directory are fictional or sanitized.
 No production configuration, credentials, private keys, certificates,
 customer information, employer information, or confidential data is included.
 
-The examples must be independently reviewed before use in any real
-environment.
+Configuration examples and operational procedures must be independently
+reviewed, adapted, approved, and tested before use in any real environment.
+
+The project does not represent an official Fortinet deployment guide or a
+production-ready configuration.
