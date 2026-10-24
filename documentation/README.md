@@ -136,7 +136,7 @@ the relevant tests are completed in a controlled laboratory environment.
 
 ## Related Project Resources
 
-- [Main entation Principles
+- Main entation Principles
 
 The project documentation follows these principles:
 
