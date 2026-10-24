@@ -99,6 +99,17 @@ The test plan covers:
 
 ---
 
+### Security Risk Register
+
+Identifies and evaluates security and operational risks associated with
+firewall policies, network segmentation, administrative access, the DMZ,
+High Availability, SD-WAN, security profiles, centralized logging, firmware
+management, configuration backup, and public repository sanitization.
+
+[View Security Risk Register](risk-register.md)
+
+---
+
 ## Planned Documentation
 
 The following documents will be added during the next project phase:
@@ -125,7 +136,7 @@ the relevant tests are completed in a controlled laboratory environment.
 | Security Hardening Checklist | Complete |
 | Validation Test Plan | Complete |
 | Validation Test Results | Pending Lab Execution |
-| Security Risk Register | Planned |
+| Security Risk Register | Complete |
 | HA Failover Procedure | Planned |
 | SD-WAN Failover Procedure | Planned |
 | Rollback Plan | Planned |
