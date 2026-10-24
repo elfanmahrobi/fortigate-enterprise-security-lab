@@ -30,6 +30,23 @@ policies, management access, logging, and FortiGate High Availability.
 
 [View Implementation Plan](implementation-plan.md)
 
+### Security Hardening Checklist
+
+Defines security-hardening requirements for administrator accounts,
+management access, interfaces, firewall policies, UTM profiles, DMZ, guest
+access, SD-WAN, High Availability, centralized logging, firmware management,
+and configuration backups.
+
+[View Security Hardening Checklist](hardening-checklist.md)
+
+### Validation Test Plan
+
+Defines functional and negative test cases for network segmentation, firewall
+policies, NAT, security profiles, management access, centralized logging,
+SD-WAN failover, and FortiGate High Availability.
+
+[View Validation Test Plan](test-plan.md)
+
 ## Disclaimer
 
 All organizations, systems, IP addresses, domain names, and configurations
