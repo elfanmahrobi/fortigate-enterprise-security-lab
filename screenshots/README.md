@@ -4,20 +4,29 @@ This directory contains screenshots from a controlled lab environment.
 
 All screenshots must be reviewed and sanitized before publication.
 
-## Simulated Visual Evidence
+# Lab Evidence
 
-Some images in this directory are AI-generated interface mockups created to
-illustrate the expected appearance of the fictional FortiGate laboratory.
+This directory contains visual materials for the FortiGate Enterprise
+Security Lab.
 
-Simulated images:
+## Evidence Classification
+
+Visual materials are classified into two categories:
+
+### Simulated Visuals
+
+Simulated visuals are AI-generated interface mockups created to demonstrate
+the expected appearance of the fictional FortiGate lab.
+
+Simulated visuals:
 
 - Do not represent an operational FortiGate deployment
 - Are not proof of successful configuration
 - Are not actual validation results
-- Must not be used to mark a test case as passed
+- Must not be used to mark test cases as passed
 - May contain interface elements that differ from an actual FortiOS build
 
-Files containing simulated visuals use the prefix:
+Simulated files use the following naming format:
 
 ```text
-simulated-
+<sequence>-simulated-<description>.png
