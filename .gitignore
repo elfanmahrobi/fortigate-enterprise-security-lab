@@ -1,0 +1,54 @@
+# Production FortiGate configuration exports
+*.cfg
+*.conf.bak
+*.backup
+*.encrypted
+
+# Certificates and private keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.cer
+*.crt
+
+# Secrets and credentials
+.env
+.env.*
+secrets.*
+credentials.*
+passwords.*
+tokens.*
+
+# Log files
+*.log
+logs/
+
+# Packet captures
+*.pcap
+*.pcapng
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Raw evidence pending sanitization
+screenshots/raw/
+evidence/raw/
+
+# Local FortiGate backups
+backups/
+production-configs/
